@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+
+:root{
+
+    --red: #c85450;
+    --black: #4c4747;
+    --white: #ffffff;
+   
+}
+
+
+
+
+.navbar{  
+    width: 100%; 
+    background-color: var(--red);
+    padding: 15px;  
+
+}
+
+.container{
+    padding:25px;
+}
+.book-container{
+    width: 25%;
+    padding: 15px;
+    background-color: var(--black);
+    border-radius: 10px;
+    color: var(--white);
+    display: inline-block;
+    margin: 10px;
+    vertical-align:top;
+}
+.book-container h2{
+    color: var(--red);
+}
+.book-container button{
+    background-color: var(--red);
+    border-radius: 5px;
+    width: 60px;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    margin-top: 10px;
+}
+
+.add-book-btn{
+   padding: 20px 30px 20px 30px;
+   border-radius: 100%;
+   background-color: var(--red);
+   font-size: 40px;
+   border: none;
+   position: fixed;
+   bottom: 30px;
+   right: 50px;
+}
+
+
+
+
+.popup-overlay{
+    background-color: black;
+    opacity: 0.9;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+   
+   
+    
+}
+
+.popup-box{
+    width: 40%;
+    background-color: var(--red);
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    border-radius: 10px;
+    padding: 40px;
+    z-index: 2;
+    
+}
+
+.popup-box input{
+
+    width: 100%;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    border-bottom: solid black 2px;
+
+}
+.popup-box textarea{
+
+    width: 100%;
+    padding: 5px;
+    background-color: transparent;
+    font-size: 20px;
+    border: solid black 2px;
+    margin-top: 10px;
+
+}
+.popup-box input::placeholder{
+    color: var(--black);
+}
+.popup-box textarea::placeholder{
+    color: var(--black);
+}
+.popup-box button{
+    padding: 10px 20px 10px 20px;
+    margin: 5px;
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    border-radius: 3px;
+}
+.popup-box input:focus{
+    outline: none;
+    
+}
+.popup-box textarea:focus{
+    outline: none;
+    
+}
